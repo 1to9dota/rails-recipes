@@ -46,6 +46,7 @@ gem "select2-rails"
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
+gem 'bootstrap-datepicker-rails'
 group :development, :test do
   gem 'rspec-rails'
   gem "nested_form_fields"
