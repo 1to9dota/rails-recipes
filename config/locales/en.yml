@@ -20,6 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  bulk_update: bianji again
+  bulk_delete: shanchu again
+  hello: "Hi %{name},"
   event_list: Event List
   admin:
     event_list: Admin Event List
