@@ -43,8 +43,11 @@ gem 'i18n'
 gem 'rails-i18n'
 gem "devise-i18n"
 gem "select2-rails"
+
+
 group :development, :test do
   gem 'rspec-rails'
+  gem "nested_form_fields"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
