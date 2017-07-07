@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+
+  has_one :profile
   has_many :memberships
   has_many :groups, :through => :memberships
   # Include default devise modules. Others available are:
@@ -9,5 +11,5 @@ class User < ApplicationRecord
   def display_name
     self.email.split("@").first
   end
-
+accepts_nested_attributes_for :profile
 end
