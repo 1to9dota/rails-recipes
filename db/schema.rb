@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170707071521) do
+ActiveRecord::Schema.define(version: 20170707124622) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
@@ -20,7 +26,24 @@ ActiveRecord::Schema.define(version: 20170707071521) do
     t.datetime "updated_at",                    null: false
     t.string   "friendly_id"
     t.string   "status",      default: "draft"
+    t.integer  "category_id"
+    t.index ["category_id"], name: "index_events_on_category_id"
     t.index ["friendly_id"], name: "index_events_on_friendly_id", unique: true
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_memberships_on_group_id"
+    t.index ["user_id"], name: "index_memberships_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
