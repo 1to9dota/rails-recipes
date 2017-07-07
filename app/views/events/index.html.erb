@@ -4,6 +4,7 @@
   <% @events.each do |event| %>
     <li>
       <%= link_to event.name, event_path(event) %>
+      <%= event.created_at.to_s(:long_ordinal)  %>
     </li>
   <% end %>
 </ul>
