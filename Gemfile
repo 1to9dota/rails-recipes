@@ -45,7 +45,7 @@ gem "devise-i18n"
 gem "select2-rails"
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
-
+gem 'figaro'
 group :development, :test do
   gem 'rspec-rails'
   gem "nested_form_fields"
