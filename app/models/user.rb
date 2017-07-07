@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  has_many :registrations
   has_one :profile
   has_many :memberships
   has_many :groups, :through => :memberships
