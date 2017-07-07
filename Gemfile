@@ -47,6 +47,8 @@ gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
 gem 'bootstrap-datepicker-rails'
+gem 'ranked-model'
+gem 'jquery-ui-rails'
 group :development, :test do
   gem 'rspec-rails'
   gem "nested_form_fields"
