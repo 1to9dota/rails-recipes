@@ -46,10 +46,12 @@ gem "select2-rails"
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
-gem 'bootstrap-datepicker-rails'
+
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem 'kaminari'
 group :development, :test do
+  gem 'bootstrap-datepicker-rails'
   gem 'rspec-rails'
   gem "nested_form_fields"
   gem 'sqlite3'
