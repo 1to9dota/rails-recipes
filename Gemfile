@@ -50,6 +50,7 @@ gem 'figaro'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem 'kaminari'
+
 group :development, :test do
   gem 'bootstrap-datepicker-rails'
   gem 'rspec-rails'
@@ -57,6 +58,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'ckeditor'
   gem 'ransack'
+  gem 'carrierwave'
+  gem "mini_magick"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
